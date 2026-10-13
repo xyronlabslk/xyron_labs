@@ -265,14 +265,14 @@
 
     <div id="preloader" class="raw-preloader">
         <div class="raw-preloader-text">
-            <p><span class="prompt">root@inuka-tech:~#</span> ./boot_sequence</p>
+            <p><span class="prompt">root@xyron-labs:~#</span> ./boot_sequence</p>
             <p><span id="boot-text"></span></p>
         </div>
     </div>
 
     <nav class="glass-nav" id="main-nav">
         <div class="nav-container">
-            <div class="brand">Inuka<span>.</span>Tech</div>
+            <div class="brand">Xyron<span>.</span>Labs</div>
             
             <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
@@ -530,7 +530,7 @@
                         <div id="cmd-history"></div>
                         
                         <div class="terminal-input-line">
-                            <span class="prompt">guest@inuka-tech:~$</span>
+                            <span class="prompt">guest@xyron-labs:~$</span>
                             <input type="text" id="cmd-input" placeholder="enter command..." autocomplete="off" spellcheck="false">
                         </div>
                     </div>
@@ -775,7 +775,7 @@ document.onkeydown = function(e) {
 
             function printTerminal(text, isUser = false) {
                 const p = document.createElement("p");
-                if(isUser) { p.innerHTML = `<span class="prompt">guest@inuka-tech:~$</span> ${text}`; } 
+                if(isUser) { p.innerHTML = `<span class="prompt">guest@xyron-labs:~$</span> ${text}`; } 
                 else { p.innerHTML = text; }
                 cmdHistory.appendChild(p);
                 liveTerminal.scrollTop = liveTerminal.scrollHeight;
